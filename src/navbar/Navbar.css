@@ -1,0 +1,43 @@
+.navbar {
+  width: 33%;
+  font-size: 22px;
+}
+
+.name-container {
+  margin-top: 20px;
+}
+.name {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.content {
+  padding-left: 2.5rem;
+}
+
+.title {
+  margin-top: 2.5rem;
+  cursor: default;
+}
+
+ol {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  padding-left: 25px;
+}
+
+.link {
+  width: fit-content;
+  margin-top: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+li::marker {
+  content: none;
+}
