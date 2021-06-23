@@ -4,6 +4,8 @@
   justify-content: space-around;
   flex: 1;
   overflow: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
 }
 
 .picture-container {

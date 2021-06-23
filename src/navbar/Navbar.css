@@ -1,6 +1,8 @@
 .navbar {
   width: 25%;
   font-size: 22px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
 }
 
 .name-container {
