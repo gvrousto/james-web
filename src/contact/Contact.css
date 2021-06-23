@@ -1,0 +1,10 @@
+.contact-container {
+  display: flex;
+  flex: 1;
+  overflow: auto;
+}
+
+.contact-content {
+  margin-top: 20px;
+  font-size: 18px;
+}
