@@ -13,14 +13,14 @@ function Navbar() {
         </div>
         <div className="title">Work</div>
         <ol>
-          <Link className="link" to="/">
-            Paintings
+          <Link className="link" to="/objects">
+            Objects
           </Link>
-          <Link className="link" to="/">
-            Drawings
+          <Link className="link" to="/fashion">
+            Fashion
           </Link>
-          <Link className="link" to="/">
-            Other
+          <Link className="link" to="/points-of-sail">
+            Points of Sail
           </Link>
         </ol>
         <div className="title">Info</div>

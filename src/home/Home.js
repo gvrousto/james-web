@@ -1,35 +1,47 @@
-import React, { useState, useCallback } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import Gallery from "react-photo-gallery";
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { useLocation } from "react-router-dom";
 import { photos } from "./photos";
 import "./Home.css";
 
 function Home() {
-  const [currentImage, setCurrentImage] = useState(0);
-  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [filter, setFilter] = useState(0);
+  const [selectedPhotos, setSelectedPhotos] = useState(photos);
+  let location = useLocation();
 
-  const openLightbox = useCallback((event, { photo, index }) => {
-    setCurrentImage(index);
-    setViewerIsOpen(true);
-  }, []);
+  useEffect(() => {
+    if (location.pathname === "/objects") {
+      setFilter(1);
+    } else if (location.pathname === "/fashion") {
+      setFilter(2);
+    } else if (location.pathname === "/points-of-sail") {
+      setFilter(3);
+    } else {
+      setFilter(0);
+    }
+  }, [location]);
 
-  const closeLightbox = () => {
-    setCurrentImage(0);
-    setViewerIsOpen(false);
-  };
+  useEffect(() => {
+    if (filter === 0) {
+      setSelectedPhotos(photos);
+    } else {
+      setSelectedPhotos(
+        photos.filter(photo => {
+          return photo.filter === filter;
+        })
+      );
+    }
+  }, [filter, setSelectedPhotos]);
 
   const imageRenderer = useCallback(
-    ({ index, left, top, key, photo, onClick }) => (
+    ({ index, left, top, key, photo }) => (
       <div className="photo-container">
-        <img
-          className="photo"
-          {...photo}
-          onClick={event => {
-            onClick(event, { photo, index });
-          }}
-          alt="alt"
-        />
-        <div className="photo-description">{photo.description}</div>
+        <img className="photo" {...photo} alt="alt" />
+        <div className="description-container">
+          <div className="photo-piece-name">{photo.pieceName}</div>
+          <div className="photo-description">{photo.description}</div>
+          <div className="photo-dimensions">{photo.dimensions}</div>
+        </div>
       </div>
     ),
     []
@@ -40,24 +52,9 @@ function Home() {
       <Gallery
         direction={"column"}
         columns={1}
-        photos={photos}
-        onClick={openLightbox}
+        photos={selectedPhotos}
         renderImage={imageRenderer}
       />
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map(x => ({
-                ...x,
-                srcset: x.srcSet,
-                caption: x.title
-              }))}
-            />
-          </Modal>
-        ) : null}
-      </ModalGateway>
     </div>
   );
 }
