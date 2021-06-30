@@ -57,10 +57,12 @@ li::marker {
   .navbar-mobile {
     display: flex;
     justify-content: flex-end;
+    background-color: white;
     align-items: center;
     position: fixed;
     width: 100%;
     height: 40px;
+    z-index: 1;
   }
   .icon-mobile {
     margin-right: 10%;
