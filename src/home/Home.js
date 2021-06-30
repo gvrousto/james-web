@@ -36,7 +36,14 @@ function Home() {
   const imageRenderer = useCallback(
     ({ index, left, top, key, photo }) => (
       <div className="photo-container">
-        <img className="photo" {...photo} alt="alt" />
+        <a
+          className="photo-link"
+          href={photo.galleryLink}
+          target={"_blank"}
+          rel="noreferrer"
+        >
+          <img className="photo" {...photo} alt="alt" />
+        </a>
         <div className="description-container">
           <div className="photo-piece-name">{photo.pieceName}</div>
           <div className="photo-description">{photo.description}</div>

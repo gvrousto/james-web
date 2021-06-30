@@ -13,8 +13,12 @@
   width: 100%;
 }
 
-.photo {
+.photo-link {
   max-width: 70%;
+}
+
+.photo {
+  max-width: 100%;
   cursor: pointer;
 }
 
@@ -23,7 +27,24 @@
   flex-direction: column;
   width: 70%;
   cursor: default;
+  font-size: 18px;
+  margin-bottom: 1em;
 }
+
+.photo-piece-name {
+  font-weight: 700;
+  margin-top: 1em;
+}
+
+.photo-description {
+  margin-top: 1em;
+}
+.photo-dimensions {
+  margin-top: 1em;
+  font-weight: 100;
+  font-style: italic;
+}
+
 @media only screen and (max-width: 600px) {
   .home-container {
     display: block;
@@ -32,5 +53,8 @@
   }
   .photo-container {
     margin-top: 40px;
+  }
+  .description-container {
+    font-size: 12px;
   }
 }
