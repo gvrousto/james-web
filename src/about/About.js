@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about-container">
       <div className="picture-container">
-        <div className="asdf">
+        <div className="picture">
           <img
             className="about-picture"
             src={aboutPicture}

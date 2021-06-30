@@ -1,4 +1,5 @@
 .home-container {
+  display: block;
   width: 80%;
   overflow: auto;
 }
@@ -22,4 +23,14 @@
   flex-direction: column;
   width: 70%;
   cursor: default;
+}
+@media only screen and (max-width: 600px) {
+  .home-container {
+    display: block;
+    width: 100%;
+    overflow: auto;
+  }
+  .photo-container {
+    margin-top: 40px;
+  }
 }

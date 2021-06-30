@@ -10,3 +10,14 @@
   margin-top: 20px;
   font-size: 18px;
 }
+
+@media only screen and (max-width: 600px) {
+  .contact-container {
+    justify-content: center;
+  }
+  .contact-content {
+    margin-top: 40px;
+    width: 80%;
+    font-size: 12px;
+  }
+}

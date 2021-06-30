@@ -43,3 +43,32 @@ ol {
 li::marker {
   content: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    width: 100%;
+    font-size: 22px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+  }
+  .name-container {
+    margin-top: 40px;
+  }
+  .navbar-mobile {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+  }
+  .icon-mobile {
+    margin-right: 10%;
+  }
+  .icon-link {
+    color: black;
+  }
+  .icon {
+    width: 200px;
+  }
+}
