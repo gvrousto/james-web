@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useWindowWidth } from "@react-hook/window-size";
-import { FcMenu } from "react-icons/fa";
+import { VscMenu } from "react-icons/vsc";
 
 import "./Navbar.css";
 
@@ -49,7 +49,7 @@ function Navbar() {
       <div className="navbar-mobile">
         <div className="icon-mobile">
           <Link className="icon-link" to="/navpage">
-            <FcMenu size={30} />
+            <VscMenu size={20} />
           </Link>
         </div>
       </div>
