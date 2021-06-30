@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useWindowWidth } from "@react-hook/window-size";
-import { FaEllipsisH } from "react-icons/fa";
+import { FcMenu } from "react-icons/fa";
 
 import "./Navbar.css";
 
@@ -16,7 +16,11 @@ function Navbar() {
               James Langford
             </Link>
           </div>
-          <div className="title">Work</div>
+          <div className="title" to="/">
+            <Link className="link" to="/objects">
+              Work
+            </Link>
+          </div>
           <ol>
             <Link className="link" to="/objects">
               Objects
@@ -45,7 +49,7 @@ function Navbar() {
       <div className="navbar-mobile">
         <div className="icon-mobile">
           <Link className="icon-link" to="/navpage">
-            <FaEllipsisH size={30} />
+            <FcMenu size={30} />
           </Link>
         </div>
       </div>

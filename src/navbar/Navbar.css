@@ -20,8 +20,10 @@
 }
 
 .title {
-  margin-top: 2.5rem;
-  cursor: default;
+  margin-top: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
 }
 
 ol {
@@ -72,5 +74,8 @@ li::marker {
   }
   .icon {
     width: 200px;
+  }
+  .title {
+    margin-top: 20px;
   }
 }
