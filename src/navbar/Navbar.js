@@ -16,8 +16,8 @@ function Navbar() {
               James Langford
             </Link>
           </div>
-          <div className="title" to="/">
-            <Link className="link" to="/objects">
+          <div className="title">
+            <Link className="link" to="/">
               Work
             </Link>
           </div>
