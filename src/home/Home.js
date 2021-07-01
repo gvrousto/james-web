@@ -4,6 +4,12 @@ import { useLocation } from "react-router-dom";
 import { photos } from "./photos";
 import "./Home.css";
 
+// Descriptions closer together both
+// home page photos narrower
+// email click opens email blue w underline
+// vertically center about and contact on desktop
+// bring contact slightly down on mobile
+
 function Home() {
   const [filter, setFilter] = useState(0);
   const [selectedPhotos, setSelectedPhotos] = useState(photos);
