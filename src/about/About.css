@@ -1,6 +1,7 @@
 .about-container {
   display: flex;
   flex-direction: row;
+  align-items: center;
   justify-content: space-around;
   flex: 1;
   overflow: auto;
@@ -16,7 +17,6 @@
 
 .picture {
   width: 90%;
-  margin-top: 20px;
 }
 
 .about-picture {

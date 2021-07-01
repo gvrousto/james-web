@@ -1,6 +1,6 @@
 .home-container {
   display: block;
-  width: 80%;
+  width: 100%;
   overflow: auto;
 }
 
@@ -14,7 +14,7 @@
 }
 
 .photo-link {
-  max-width: 70%;
+  max-width: 50%;
 }
 
 .photo {
@@ -25,7 +25,7 @@
 .description-container {
   display: flex;
   flex-direction: column;
-  width: 70%;
+  width: 50%;
   cursor: default;
   font-size: 18px;
   margin-bottom: 1em;

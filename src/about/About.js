@@ -35,7 +35,14 @@ function About() {
           </div>
           <div className="paragraph">CV Available upon request.</div>
           <div className="paragraph">
-            For all inquiries please reach out to jclangford97@gmail.com
+            For all inquiries please reach out to{" "}
+            <a
+              href="mailto:jclangford97@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              jclangford97@gmail.com
+            </a>
           </div>
         </div>
       </div>

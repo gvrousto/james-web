@@ -11,7 +11,10 @@ function Navpage() {
             James Langford
           </Link>
         </div>
-        <div className="title">Work</div>
+        <Link className="link" to="/">
+          <div className="title">Work</div>
+        </Link>
+
         <ol>
           <Link className="link" to="/objects">
             Objects
