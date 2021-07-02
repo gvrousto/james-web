@@ -8,6 +8,7 @@ import "./Home.css";
 // X email click opens email blue w underline
 // X vertically center about and contact on desktop
 // X bring contact slightly down on mobile
+// scroll to top on change of filter
 
 function Home() {
   const [filter, setFilter] = useState(0);

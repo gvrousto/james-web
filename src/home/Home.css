@@ -54,7 +54,11 @@
   .photo-container {
     margin-top: 40px;
   }
+  .photo-link {
+    max-width: 70%;
+  }
   .description-container {
     font-size: 12px;
+    width: 70%;
   }
 }
