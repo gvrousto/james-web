@@ -7,12 +7,16 @@ import "./Navbar.css";
 
 function Navbar() {
   const onlyWidth = useWindowWidth();
+  function onClick() {
+    console.log("fuck");
+    window.scrollTo(0, 0);
+  }
   if (onlyWidth > 600) {
     return (
       <div className="navbar">
         <div className="content">
           <div className="name-container">
-            <Link className="name" to="/">
+            <Link onClick={onClick} className="name" to="/">
               James Langford
             </Link>
           </div>
