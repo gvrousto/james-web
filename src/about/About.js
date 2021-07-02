@@ -1,5 +1,4 @@
 import React from "react";
-import aboutPicture from "./aboutPicture.jpeg";
 import "./About.css";
 
 function About() {
@@ -9,7 +8,9 @@ function About() {
         <div className="picture">
           <img
             className="about-picture"
-            src={aboutPicture}
+            src={
+              "https://jimmylangford.s3.us-east-2.amazonaws.com/aboutPicture.jpeg"
+            }
             alt="aboutPicture"
           />
         </div>
