@@ -51,6 +51,7 @@ function Navbar() {
   } else {
     return (
       <div className="navbar-mobile">
+        <div className="navbar-mobile-header">James Langford</div>
         <div className="icon-mobile">
           <Link className="icon-link" to="/navpage">
             <VscMenu size={20} />

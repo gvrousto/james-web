@@ -59,9 +59,12 @@ function Home() {
     ),
     []
   );
-
+  function onClick() {
+    console.log("fuck");
+    document.documentElement.scrollTop = 0;
+  }
   return (
-    <div className="home-container">
+    <div onClick={onClick} className="home-container">
       <Gallery
         direction={"column"}
         columns={1}

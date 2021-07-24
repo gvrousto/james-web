@@ -54,7 +54,7 @@ li::marker {
     font-weight: 100;
   }
   .name-container {
-    margin-top: 40px;
+    margin-top: 50px;
   }
   .navbar-mobile {
     display: flex;
@@ -63,14 +63,26 @@ li::marker {
     align-items: center;
     position: fixed;
     width: 100%;
-    height: 40px;
+    height: 50px;
     z-index: 1;
   }
+
+  .navbar-mobile-header {
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .icon-mobile {
-    margin-right: 10%;
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
   }
   .icon-link {
     color: black;
+    margin-right: 20%;
   }
   .icon {
     width: 200px;
