@@ -13,31 +13,6 @@ import "./Home.css";
 function Home() {
   const [filter, setFilter] = useState(0);
   const [selectedPhotos, setSelectedPhotos] = useState(photos);
-  let location = useLocation();
-
-  useEffect(() => {
-    if (location.pathname === "/objects") {
-      setFilter(1);
-    } else if (location.pathname === "/fashion") {
-      setFilter(2);
-    } else if (location.pathname === "/points-of-sail") {
-      setFilter(3);
-    } else {
-      setFilter(0);
-    }
-  }, [location]);
-
-  useEffect(() => {
-    if (filter === 0) {
-      setSelectedPhotos(photos);
-    } else {
-      setSelectedPhotos(
-        photos.filter(photo => {
-          return photo.filter === filter;
-        })
-      );
-    }
-  }, [filter, setSelectedPhotos]);
 
   const imageRenderer = useCallback(
     ({ index, left, top, key, photo }) => (
@@ -59,19 +34,13 @@ function Home() {
     ),
     []
   );
-  function onClick() {
-    console.log("fuck");
-    document.documentElement.scrollTop = 0;
-  }
   return (
-    <div onClick={onClick} className="home-container">
-      <Gallery
-        direction={"column"}
-        columns={1}
-        photos={selectedPhotos}
-        renderImage={imageRenderer}
-      />
-    </div>
+    <Gallery
+      direction={"column"}
+      columns={1}
+      photos={selectedPhotos}
+      renderImage={imageRenderer}
+    />
   );
 }
 

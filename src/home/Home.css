@@ -14,7 +14,7 @@
 }
 
 .photo-link {
-  max-width: 50%;
+  max-width: 30%;
 }
 
 .photo {
@@ -25,7 +25,7 @@
 .description-container {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 30%;
   cursor: default;
   font-size: 18px;
   margin-bottom: 1em;
