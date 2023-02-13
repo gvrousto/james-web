@@ -16,7 +16,7 @@ function Navpage() {
         </Link>
 
         <ol>
-          <Link className="link" to="/shop">
+          <Link className="link" to={{ pathname: "https://jameslangford.myshopify.com/" }} target="_blank">
             Shop
           </Link>
           <Link className="link" to="/objects">
