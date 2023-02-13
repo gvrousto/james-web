@@ -16,6 +16,9 @@ function Navpage() {
         </Link>
 
         <ol>
+          <Link className="link" to="/shop">
+            Shop
+          </Link>
           <Link className="link" to="/objects">
             Objects
           </Link>

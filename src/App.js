@@ -22,6 +22,10 @@ function App() {
           <Route path="/navpage">
             <Navpage />
           </Route>
+          <Route path='/shop' target="_blank" component={() => {
+              window.location.href = 'https://jameslangford.myshopify.com/';
+              return null;
+          }}/>
           <Route path="/">
             <Home />
           </Route>

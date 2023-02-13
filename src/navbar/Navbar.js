@@ -26,6 +26,9 @@ function Navbar() {
             </Link>
           </div>
           <ol>
+            <Link className="link" to="/shop">
+              Shop
+            </Link>
             <Link className="link" to="/objects">
               Objects
             </Link>
