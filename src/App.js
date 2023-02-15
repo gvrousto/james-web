@@ -23,7 +23,7 @@ function App() {
             <Navpage />
           </Route>
           <Route path='/shop' target="_blank" component={() => {
-              window.open('https://jameslangford.myshopify.com/', "_blank");
+              window.location.href = 'https://jameslangford.myshopify.com/';
               return null;
           }}/>
           <Route path="/">
